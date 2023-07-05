@@ -1,6 +1,6 @@
 import LogoTitle from '../../assets/images/logo-s.png';
 import './index.scss'
-
+import Logo from './Logo';
 
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState }  from 'react';
@@ -43,7 +43,7 @@ const Home = () => {
         <h2>Frontend Developer</h2>
         <Link to="/contact" className="flat-button">CONTACT ME</Link>
       </div>    
-      
+      <Logo/>
     </div>
   );
 }
