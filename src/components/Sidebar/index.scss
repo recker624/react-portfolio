@@ -87,11 +87,18 @@
       }
     }
 
+    a.projects-link {
+      &:after {
+        content: 'PROJECTS';
+      }
+    }
+
     a.active {
       svg {
         color: #34eb4c;
       }
     }
+
   }
 
   ul {
