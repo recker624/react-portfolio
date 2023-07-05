@@ -22,6 +22,12 @@ $primary-color: #ffd700;
   src: url('./assets/fonts/SourceCodePro-Regular.ttf') format('ttf');
 }
 
+@font-face {
+  font-family: 'MPLUS1Code';
+  src: url('./assets/fonts/MPLUS1Code-Regular.ttf') format('ttf');
+}
+
+
 input,
 textarea {
   font-family: 'Helvetica Neue';
