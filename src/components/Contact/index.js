@@ -70,14 +70,14 @@ const Contact = () => {
         <div className="info-map">
           Sahil Saini,
           <br />
-          Street Address, H.no,<br />
-          City <br />
+          Barara, Haryana <br />
+          India, 133201 <br />
           <span>sahilsaini624@gmail.com</span>
         </div>
         <div className="map-wrapper">
-          <MapContainer center={[51.505, -0.09]} zoom={13}>
+          <MapContainer center={[30.2120, 77.0402]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[51.505, -0.09]} >
+            <Marker position={[30.2120,77.0402]} >
               <Popup>
                 Hi! I'm here.
               </Popup>
