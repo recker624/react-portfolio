@@ -1,0 +1,65 @@
+.projects-container {
+  width: 100vh;
+  padding: 0;
+  margin-top: 10%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+
+  .project-card {
+    width: 230px;
+    height: 360px;
+    padding: 20px 20px;
+    margin: 0 10px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border: 1px solid #5a5a5a;
+    border-radius: 5px;
+    background: #222222;
+    box-shadow: 0 0 5px 0 #34eb4c;
+    opacity: 0;
+    animation: fadeIn 1.2s 2.5s;
+    animation-fill-mode: forwards;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform:scale(1.05);
+      box-shadow: 0 0 10px 0 #34eb4c;
+      animation-fill-mode: forwards;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #fff;
+      font-family: monospace;
+      letter-spacing: 2px;
+    }
+
+    .img {
+      height: 150px;
+      width: 100%;
+    }
+
+    a {
+      font-family: 'Coolvetica';
+      font-size: 15px;
+      color: #34eb4c;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+    }
+
+    .project-link,
+    .website-link {
+      margin-top: 6px;
+    }
+  }
+}
+
+@for $i from 1 through 35 {
+  ._#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
