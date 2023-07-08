@@ -63,6 +63,7 @@ const Projects = () => {
             {
               projectsData.map(function (value, index) {
                 return (
+                  // eslint-disable-next-line no-useless-concat
                   <div className={"project-card project-card-hover" + " " + "_15" + index} key={value.projectTitle + "_" + index}>
                     <img src={value.projectImage} alt={ value.alt } className="website-img"></img>
                     <div className="project-info">
