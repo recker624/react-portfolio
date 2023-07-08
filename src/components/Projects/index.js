@@ -6,6 +6,7 @@ import Loader from 'react-loaders';
 import ResturantPage from '../../assets/images/resturant-page.png';
 import WeatherApp from '../../assets/images/weather-app.png';
 import BookCard from '../../assets/images/book-card.png';
+import ComingSoon from '../../assets/images/coming-soon.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
@@ -38,6 +39,15 @@ const Projects = () => {
         websiteLink: 'https://recker624.github.io/Library/',
         alt:'Library Cards'
       },
+      {
+        projectTitle: 'Resume Builder',
+        projectDescription: "Work In Progress",
+        projectImage: ComingSoon,
+        projectLink: 'https://github.com/recker624/cv-project',
+        websiteLink: '#',
+        alt:'Library Cards'
+      },
+      
     ];
 
   useEffect(() => {
@@ -64,25 +74,33 @@ const Projects = () => {
               projectsData.map(function (value, index) {
                 return (
                   // eslint-disable-next-line no-useless-concat
-                  <div className={"project-card project-card-hover" + " " + "_15" + index} key={value.projectTitle + "_" + index}>
-                    <img src={value.projectImage} alt={ value.alt } className="website-img"></img>
+                  <div className={"project-card" + " " + "_15" + index} key={value.projectTitle + "_" + index}>
+                    <div className='project-image'><img src={value.projectImage} alt={ value.alt } className="website-img"></img></div>
                     <div className="project-info">
                       <h2>{value.projectTitle}</h2>
                       <div className='project-description'>
                         <p>{value.projectDescription}</p>
                       </div>
-                      <div className='project-link'>
-                        <a href={value.projectLink} target="_blank" rel="noreferrer">
-                          GitHub Link
-                          <FontAwesomeIcon icon={faLink} />
-                        </a>
-                      </div>
-                      <div className='website-link'>
-                        <a href={value.websiteLink} target="_blank" rel="noreferrer">
-                          Visit Website
-                          <FontAwesomeIcon icon={faLink} />
-                        </a>
-                      </div>
+                        {
+                          value.projectLink !== '#' ?
+                            <div className='project-link'>
+                              <a href={value.projectLink} target="_blank" rel="noreferrer">
+                                GitHub Link
+                                <FontAwesomeIcon icon={faLink} />
+                              </a>
+                          </div>
+                          : null
+                      }   
+                      {
+                        value.websiteLink !== '#' ?
+                          <div className='website-link'>
+                            <a href={value.websiteLink} target="_blank" rel="noreferrer">
+                              Visit Website
+                              <FontAwesomeIcon icon={faLink} />
+                            </a>
+                          </div>
+                          : null
+                      }
                     </div>
                   </div>
                 );
