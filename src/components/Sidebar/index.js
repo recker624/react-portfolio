@@ -41,7 +41,7 @@ const Sidebar = () => {
           <a 
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/recker624"
+            href="https://www.linkedin.com/in/sahil-saini-977870282"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>

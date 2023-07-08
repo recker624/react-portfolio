@@ -5,9 +5,9 @@ import Loader from 'react-loaders';
 
 import ResturantPage from '../../assets/images/resturant-page.png';
 import WeatherApp from '../../assets/images/weather-app.png';
-import ResumeBuilder from '../../assets/images/weather-app.png';
+import BookCard from '../../assets/images/book-card.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faForward, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -15,28 +15,28 @@ const Projects = () => {
   const projectsData =
     [
       {
+        projectTitle: 'Weather App',
+        projectDescription: 'A weather app that shows current weather and forcast.',
+        projectImage: WeatherApp,
+        projectLink: 'https://github.com/recker624/WeatherApp',
+        websiteLink: 'https://recker624.github.io/WeatherApp/',
+        alt:'Weather App'
+      },
+      {
         projectTitle: 'Resturant page',
         projectDescription: 'A simple resturant page with a menu and navigation tabs.',
         projectImage: ResturantPage,
-        projectLink: 'https://github.com/recker624/WeatherApp',
+        projectLink: 'https://github.com/recker624/Resturant-page',
         websiteLink: 'https://recker624.github.io/Resturant-page/',
         alt:'Resturant page'
       },
       {
-        projectTitle: 'Weather App',
-        projectDescription: 'A weather app that shows current weather and forcast.',
-        projectImage: WeatherApp,
-        projectLink: 'https://github.com/recker624/Resturant-page',
-        websiteLink: 'https://recker624.github.io/Resturant-page/',
-        alt:'Weather App'
-      },
-      {
-        projectTitle: 'Resume Builder',
-        projectDescription: 'A resume builder with a pdf resume generator',
-        projectImage: ResumeBuilder,
-        projectLink: 'https://github.com/recker624/cv-project',
-        websiteLink: '',
-        alt:'Resume Builder'
+        projectTitle: 'Book Cards',
+        projectDescription: "A book card app to help you keep track of your favourite books.",
+        projectImage: BookCard,
+        projectLink: 'https://github.com/recker624/Library',
+        websiteLink: 'https://recker624.github.io/Library/',
+        alt:'Library Cards'
       },
     ];
 
