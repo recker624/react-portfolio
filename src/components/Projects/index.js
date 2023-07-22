@@ -16,6 +16,14 @@ const Projects = () => {
   const projectsData =
     [
       {
+        projectTitle: 'Resume Builder',
+        projectDescription: "A simple resume builder that helps you create a professional resume.",
+        projectImage: ResumeBuilder,
+        projectLink: 'https://github.com/recker624/cv-project',
+        websiteLink: 'https://recker624.github.io/cv-project/',
+        alt:'Resume Builder'
+      },
+      {
         projectTitle: 'Weather App',
         projectDescription: 'A weather app that shows current weather and forcast.',
         projectImage: WeatherApp,
@@ -39,15 +47,6 @@ const Projects = () => {
         websiteLink: 'https://recker624.github.io/Library/',
         alt:'Library Cards'
       },
-      {
-        projectTitle: 'Resume Builder',
-        projectDescription: "A simple resume builder that helps you create a professional resume.",
-        projectImage: ResumeBuilder,
-        projectLink: 'https://github.com/recker624/cv-project',
-        websiteLink: 'https://recker624.github.io/cv-project/',
-        alt:'Resume Builder'
-      },
-      
     ];
 
   useEffect(() => {
