@@ -6,7 +6,7 @@ import Loader from 'react-loaders';
 import ResturantPage from '../../assets/images/resturant-page.png';
 import WeatherApp from '../../assets/images/weather-app.png';
 import BookCard from '../../assets/images/book-card.png';
-import ComingSoon from '../../assets/images/coming-soon.jpg';
+import ResumeBuilder from '../../assets/images/resume-builder.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
@@ -41,11 +41,11 @@ const Projects = () => {
       },
       {
         projectTitle: 'Resume Builder',
-        projectDescription: "Work In Progress",
-        projectImage: ComingSoon,
+        projectDescription: "A simple resume builder that helps you create a professional resume.",
+        projectImage: ResumeBuilder,
         projectLink: 'https://github.com/recker624/cv-project',
-        websiteLink: '#',
-        alt:'Library Cards'
+        websiteLink: 'https://recker624.github.io/cv-project/',
+        alt:'Resume Builder'
       },
       
     ];
